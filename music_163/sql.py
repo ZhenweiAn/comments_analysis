@@ -114,13 +114,6 @@ def get_after_music():
 def dis_connect():
     connection.close()
 
-#create_tables()
 
-sql = '''select * from musics'''
-cursor = connection.cursor()
-cursor.execute(sql)
-rows = cursor.fetchall()
-print(len(rows))
-#for row in rows:
-#    print(row)
-#create_tables()
+if __name__ == "main":
+    create_tables()
